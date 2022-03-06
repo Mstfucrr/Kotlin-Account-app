@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28012e"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="172dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="272dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/style_for_edittext_radius"
+        android:drawableStart="@drawable/account_purple"
+
+        android:drawablePadding="5sp"
+        android:drawableTint="#200125"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="textPersonName"
+        android:paddingStart="15sp"
+        android:textSize="20sp"
+        app:layout_constraintCircleRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        tools:ignore="DuplicateSpeakableTextCheck,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonPassword"
+        android:layout_width="272dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/style_for_edittext_radius"
+        android:drawableStart="@drawable/lock_purple"
+        android:drawablePadding="5sp"
+
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPersonName"
+        android:paddingStart="15sp"
+        android:textSize="20sp"
+        app:layout_constraintCircleRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="31dp"
+        android:text="Giriş Yap"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        tools:ignore="HardcodedText" />
+
+    <android.widget.Button
+        android:id="@+id/Btn_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/style_for_buttons_radius"
+        android:text="Giriş Yap"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonPassword" />
+
+    <android.widget.Button
+        android:id="@+id/Btn_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/style_for_buttons_radius"
+        android:text="Kayıt Ol"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonPassword"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/Btn_Login"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
